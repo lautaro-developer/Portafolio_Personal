@@ -1,0 +1,9 @@
+.github {
+  border: 2px solid transparent;
+  transition: 300ms all ease;
+}
+
+.github:hover {
+  border: 2px solid #ffffff;
+  filter: opacity(100%);
+}

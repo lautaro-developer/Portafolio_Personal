@@ -1,0 +1,52 @@
+.div__lenguajesIcons{
+  background-color: rgba(51, 51, 51, 0.469);
+}
+
+.div__lenguajesIcons > div{
+  transition: 500ms all ease;
+  border-bottom: 2px solid transparent;
+  padding: 5px;
+  filter: opacity(70%);
+}
+
+.div__lenguajesIcons > div:hover {
+  filter: opacity(100%);
+
+}
+
+
+.div__lenguajesIcons > div:hover:nth-child(1) {
+  /*HTML*/
+  color: #E34C26;
+  border-bottom: 2px solid;
+}
+
+.div__lenguajesIcons > div:hover:nth-child(2) {
+  /*CSS*/
+  color: #3C99DC;
+  border-bottom: 2px solid;
+}
+
+.div__lenguajesIcons > div:hover:nth-child(3) {
+  /*JS*/
+  color: #F0DB4F;
+  border-bottom: 2px solid;
+}
+
+.div__lenguajesIcons > div:hover:nth-child(4) {
+  /*Node*/
+  color: #6cc24a;
+  border-bottom: 2px solid;
+}
+
+.div__lenguajesIcons > div:hover:nth-child(5) {
+  /*Lnux*/
+  color: #ffffff;
+  border-bottom: 2px solid;
+}
+
+.div__lenguajesIcons > div:hover:nth-child(6) {
+  /*React*/
+  color: #61DBFB;
+  border-bottom: 2px solid;
+}

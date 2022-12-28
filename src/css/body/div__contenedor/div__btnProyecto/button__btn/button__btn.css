@@ -1,0 +1,13 @@
+.button__btn {
+  width: 100%;
+  font-size: 20px;
+  padding: 5px;
+
+  border: none;
+  background-color: #2c2c2ca5;
+  filter: opacity(40%);
+  color: #fff;
+  border-radius: 4px;
+
+  cursor: pointer;
+}

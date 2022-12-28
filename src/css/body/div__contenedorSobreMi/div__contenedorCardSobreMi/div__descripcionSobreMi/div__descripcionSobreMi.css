@@ -1,0 +1,6 @@
+.div__descripcionSobreMi {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 1rem;
+}

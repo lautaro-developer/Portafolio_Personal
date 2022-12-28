@@ -1,0 +1,11 @@
+.a__redes  {
+  filter: opacity(70%);
+  border-bottom: 1px solid;
+  color: #ffffff;
+
+  transition: 500ms ease all;
+}
+
+.a__redes:hover  {
+  filter: opacity(100%);
+}
