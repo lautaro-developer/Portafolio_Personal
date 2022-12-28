@@ -1,0 +1,11 @@
+.dark {
+  background-color: rgb(31, 31, 31);
+  color: #fff;
+  transition: 500ms all;
+}
+
+.light {
+  background-color: #fff;
+  color: #333;
+  transition: 500ms all;
+}

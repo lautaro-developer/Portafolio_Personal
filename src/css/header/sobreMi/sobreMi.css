@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap');
+
+.sobreMi {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sobreMi > a {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sobreMi > a {
+  font-size: 20px;
+  padding: 5px;
+  transition: 500ms all ease;
+  color: rgba(255, 255, 255, 0.445);
+}
+
+.sobreMi > a:hover {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 800px) {
+  .sobreMi {
+    display: none;
+  }
+}

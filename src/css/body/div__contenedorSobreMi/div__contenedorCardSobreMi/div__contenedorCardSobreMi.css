@@ -1,0 +1,12 @@
+.div__contenedorCardSobreMi {
+  display: flex;
+  gap: 5%;
+  width: 70%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .div__contenedorCardSobreMi {
+    flex-direction: column;
+  }
+}

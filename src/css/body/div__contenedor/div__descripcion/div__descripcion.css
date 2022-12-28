@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.div__descripcion {
+  background: #2c2c2c;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.div__descripcion > p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}

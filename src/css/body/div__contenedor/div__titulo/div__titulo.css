@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+.div__titulo {
+  text-align: center;
+  background: #2c2c2c;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.div__titulo > h2 {
+  font-family: 'Koulen', cursive;
+
+  letter-spacing: 2px;
+  font-weight: 100;
+}

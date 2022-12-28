@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap");
+
+.div__presentarce {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.div__presentarce > div > h1 {
+  font-family: "Marcellus SC", serif;
+  letter-spacing: 1px;
+}
