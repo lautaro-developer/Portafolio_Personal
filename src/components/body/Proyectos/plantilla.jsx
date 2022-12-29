@@ -2,7 +2,6 @@ import { Btn } from "../../btn/Btn";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faDesktop } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { Parrafo } from "../../Parrafo/Parrafo";
 
 import "../../../css/body/div__contenedor/div__contenedor.css";
@@ -26,7 +25,6 @@ export default function ProyectoPlantilla({
 }) {
   const gitHubIcon = <FontAwesomeIcon icon={faGithub} />;
   const desktopIcon = <FontAwesomeIcon icon={faDesktop} />;
-
   return (
     <div className={`div__contenedor ${theme}`}>
       <div className="div__img">
