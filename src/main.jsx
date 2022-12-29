@@ -6,4 +6,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Inicio />
   </React.StrictMode>
+<<<<<<< HEAD
 );
+=======
+)
+>>>>>>> pruebas

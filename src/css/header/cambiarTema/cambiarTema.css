@@ -1,0 +1,9 @@
+.CambiarTema {
+  width: 50px;
+  padding: 5px;
+  border: none;
+  font-size: 20px;
+
+  background-color: transparent;
+  color: #fff;
+}
