@@ -29,7 +29,7 @@ export default function Lenguajes({ theme }) {
         <div className="div__iconContenedor">
           <div className={`div__lenguajesIcons ${theme}`}>
             {lenguajes.map((i) => (
-              <motion.div whileHover={{ scale: 1.3 }}>
+              <motion.div whileHover={{ scale: 1.3 }} key={i.iconName}>
                 <Icons icons={i} size="3x" />
               </motion.div>
             ))}

@@ -28,7 +28,7 @@ function PasatiemposIcons() {
 
   return pasatiempos.map((i) => {
     return (
-      <div>
+      <div key={i.iconName}>
         <Icons icons={i} size="2x" key={i} />
       </div>
     );
@@ -38,7 +38,7 @@ function PasatiemposIcons() {
 function PasatiemposParrafos() {
   let parrafoPasatiempos = ["videjuegos", "leer", "musica"];
 
-  return parrafoPasatiempos.map((v) => <Parrafo valor={v} />);
+  return parrafoPasatiempos.map((v) => <Parrafo valor={v} key={v}/>);
 }
 
 function SobreMiBase({ theme }) {

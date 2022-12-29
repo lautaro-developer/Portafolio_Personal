@@ -6,13 +6,26 @@
  * @target "Para abrir una pagina en otra pestaña, (Este usa una operacion ternaria por si target={true} te envia a otra pagina, por defecto esta en false)"
  * @returns
  */
-export const Enlace = ({ href = "#", valor, id, target = false, estilos }) => {
+export const Enlace = ({
+  href = "#",
+  valor,
+  id,
+  target = false,
+  estilos,
+  icono,
+}) => {
   return target ? (
-    <a className={estilos} key={id} href={href} target="_blank" rel="noreferrer">
-      {valor}
+    <a
+      className={estilos}
+      key={id}
+      href={href}
+      target="_blank"
+      rel="noreferrer"
+    >
+      {icono} {valor}
     </a>
   ) : (
-    <a  className={estilos} key={id} href={href}>
+    <a className={estilos} key={id} href={href}>
       {valor}
     </a>
   );
