@@ -7,14 +7,14 @@ import SobreMi from "./body/sobreMi/SobreMi";
 import Lenguajes from "./body/lenguajes/Lenguajes";
 import Footer from "./footer/Footer";
 
-import "./theme.css"
+import "./theme.css";
 
 import { useEffect, useState } from "react";
 
-
-
 export default function Inicio() {
+  let tema = localStorage.getItem('hola')
   const [theme, setTheme] = useState("dark");
+
 
   useEffect(() => {
     document.body.className = theme;
@@ -27,11 +27,11 @@ export default function Inicio() {
 
   return (
     <div id="inicio" className={theme}>
-      <Header accion={toggleTheme} valor={theme}/>
-      <ProyectoPlantilla theme={theme}/>
-      <SobreMi theme={theme}/>
-      <Lenguajes theme={theme}/>
-      <Footer theme={theme}/>
+      <Header accion={toggleTheme} valor={theme} />
+      <ProyectoPlantilla theme={theme} />
+      <SobreMi theme={theme} />
+      <Lenguajes theme={theme} />
+      <Footer theme={theme} />
     </div>
   );
 }
