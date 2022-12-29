@@ -25,14 +25,14 @@ export default function Header({ accion, valor }) {
   function Tema() {
     if (valor === "dark")
       return (
-        <button className="hoy" onClick={accion}>
+        <button className="light" onClick={accion}>
           {<Icons icons={faSun} />}
           {localStorage.setItem("hola", valor)}
         </button>
       );
     else
       return (
-        <button className="hoy" onClick={accion}>
+        <button className="dark" onClick={accion}>
           {<Icons icons={faMoon} />}
           {localStorage.setItem("hola", valor)}
         </button>
