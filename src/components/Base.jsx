@@ -1,5 +1,4 @@
-import "../css/base.css";
-import "../css/responsive.css";
+import { useState, useEffect } from "react";
 
 import Header from "./header/Header";
 import ProyectoPlantilla from "./body/Proyectos/proyectos";
@@ -8,13 +7,10 @@ import Lenguajes from "./body/lenguajes/Lenguajes";
 import Footer from "./footer/Footer";
 
 import "./theme.css";
-
-import { useEffect, useState } from "react";
+import "../css/base.css";
 
 export default function Inicio() {
-  let tema = localStorage.getItem('hola')
   const [theme, setTheme] = useState("dark");
-
 
   useEffect(() => {
     document.body.className = theme;
@@ -27,7 +23,7 @@ export default function Inicio() {
 
   return (
     <div id="inicio" className={theme}>
-      <Header accion={toggleTheme} valor={theme} />
+      <Header tema={theme} dale={toggleTheme} />
       <ProyectoPlantilla theme={theme} />
       <SobreMi theme={theme} />
       <Lenguajes theme={theme} />
