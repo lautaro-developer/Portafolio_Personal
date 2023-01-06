@@ -1,12 +1,7 @@
-import {
-  faHtml5,
-  faCss3,
-  faJsSquare,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
-
 import { Icons } from "../../Icons/Icons";
+
+import { LenguajesIcons } from "./lenguajesIcons/LenguajesIcons.jsx"
 
 import "../../../css/body/div__lenguajes/div__lenguajes.css";
 import "../../../css/body/div__lenguajes/div__iconContenedor/div__iconContenedor.css";
@@ -18,7 +13,6 @@ import "../../../css/body/div__lenguajes/div__tituloLenguajes/div__tituloLenguaj
 import "../../../css/responsive.css";
 
 export default function Lenguajes({ theme }) {
-  let lenguajes = [faHtml5, faCss3, faJsSquare, faReact];
 
   return (
     <div id="lenguajes" className="div__lenguajes">
@@ -28,7 +22,7 @@ export default function Lenguajes({ theme }) {
         </div>
         <div className="div__iconContenedor">
           <div className={`div__lenguajesIcons ${theme}`}>
-            {lenguajes.map((i) => (
+            {LenguajesIcons.map((i) => (
               <motion.div whileHover={{ scale: 1.3 }}>
                 <Icons icons={i} size="3x" />
               </motion.div>

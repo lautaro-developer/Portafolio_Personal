@@ -1,11 +1,7 @@
-import {
-  faGamepad,
-  faBook,
-  faHeadphonesSimple,
-} from "@fortawesome/free-solid-svg-icons";
-
-import { Icons } from "../../Icons/Icons";
 import { Parrafo } from "../../Parrafo/Parrafo";
+import { PasatiemposIcons } from "./PasatiemposIcons/PasatiemposIcons"
+import { PasatiemposParrafos } from "./PasatiemposParrafo/PasatiemposParrafo"
+import { SobreMi_Base } from "./SobreMiBase/SobreMi_Base.jsx"
 
 import imgNutria from "../../../img/nutria.jpg";
 
@@ -23,43 +19,7 @@ import "../../../css/body/div__contenedorSobreMi/div__contenedorCardSobreMi/div_
 import "../../../css/body/div__contenedorSobreMi/div__contenedorPasatiempos/div__contenedorPasatiempos.css";
 import "../../../css/body/div__contenedorSobreMi/div__pasatiempos/div__pasatiempos.css";
 
-function PasatiemposIcons() {
-  let pasatiempos = [faGamepad, faBook, faHeadphonesSimple];
 
-  return pasatiempos.map((i) => {
-    return (
-      <div>
-        <Icons icons={i} size="2x" key={i} />
-      </div>
-    );
-  });
-}
-
-function PasatiemposParrafos() {
-  let parrafoPasatiempos = ["videjuegos", "leer", "musica"];
-
-  return parrafoPasatiempos.map((v) => <Parrafo valor={v} />);
-}
-
-function SobreMiBase({ theme }) {
-  let estudie =
-    "Estudie de manera autodidacta sosteniendome de recursos gratis en internet.";
-
-  let cursos =
-    "Gracias a la oportunidad del curso de alura latam fortaleci los conocimientos que tuve previamente, siempre estoy dispuesto a aprender otras tecnologias que tengan o no que ver con el desarrollo web.";
-
-  let empezarProgramar =
-    "Comenze estudiando el desarrollo web a mitad de 2020 cuando  estaba la pandemia, anteriormente (2019) ya habia tocado el tema del desarrollo web pero no tan aprofundidad.";
-  let sobreMi = [estudie, cursos, empezarProgramar];
-
-  return sobreMi.map((i) => {
-    return (
-      <div key={i} className={`div__descripcion ${theme}`}>
-        <Parrafo valor={i} />
-      </div>
-    );
-  });
-}
 
 export default function SobreMi({ theme }) {
   return (
@@ -76,7 +36,7 @@ export default function SobreMi({ theme }) {
           </div>
 
           <div className={`div__descripcionSobreMi`}>
-            <SobreMiBase theme={theme}/>
+            <SobreMi_Base theme={theme}/>
           </div>
         </div>
       </div>

@@ -1,13 +1,15 @@
 import { Enlace } from "../enlaces/a";
-import "../../css/footer/div__footer/div__footer.css";
-import "../../css/footer/div__footer/a__redes.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
-
 import { Btn } from "../btn/Btn";
+
+import "../../css/footer/div__footer/div__footer.css";
+import "../../css/footer/div__footer/a__redes.css";
+
 export default function Footer({ theme }) {
   let github = "https://github.com/lautaro-developer";
   let tw = "https://twitter.com";
+  const li = "https://www.linkedin.com/in/ruben-lautaro-alonso-diaz/"
 
   return (
     <footer>
@@ -34,7 +36,7 @@ export default function Footer({ theme }) {
           o si queres por{" "}
           {
             <Enlace
-              href="as"
+              href={li}
               valor={
                 <Btn titulo="Linkedin" i={<FontAwesomeIcon icon={faLink} />} />
               }
