@@ -23,7 +23,7 @@ export default function Inicio() {
 
   return (
     <div id="inicio" className={theme}>
-      <Header tema={theme} dale={toggleTheme} />
+      <Header accion={toggleTheme} valor={theme} />
       <ProyectoPlantilla theme={theme} />
       <SobreMi theme={theme} />
       <Lenguajes theme={theme} />
