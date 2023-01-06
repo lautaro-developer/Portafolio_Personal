@@ -7,8 +7,9 @@ import "../../css/footer/div__footer/div__footer.css";
 import "../../css/footer/div__footer/a__redes.css";
 
 export default function Footer() {
-  let gh = "https://github.com/lautaro-developer";
-  let tw = "https://twitter.com";
+  const gh = "https://github.com/lautaro-developer";
+  const tw = "https://twitter.com";
+  const li = "https://www.linkedin.com/in/ruben-lautaro-alonso-diaz/"
 
   return (
     <footer>
@@ -35,7 +36,7 @@ export default function Footer() {
           o si queres por{" "}
           {
             <Enlace
-              href="as"
+              href={li}
               icono={<Icons icons={faLink} />}
               valor="Linkedin"
               target={true}
